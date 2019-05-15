@@ -68,6 +68,7 @@ header {
   background-size: cover;
   overflow: hidden;
   padding-top: 60px;
+  margin-bottom: 35px;
 }
 
 header {
@@ -133,6 +134,22 @@ header .profile-image:hover {
   transform: scale(1.07);
 }
 
+.goals-card {
+  margin: 30px;
+  padding: 20px 40px 40px;
+  max-width: 500px;
+  text-align: center;
+  background: #efefef;
+  border-bottom: 4px solid #7289da;
+  border-radius: 6px;
+  transition: all .5s;
+}
+
+.goals-card:hover {
+  border-color: #6d6d6d;
+  transform: scale(1.07);
+}
+
 ul.skills {
   padding: 0;
   text-align: center;
@@ -174,6 +191,28 @@ ul.hobbies {
 }
 
 .hobbies li:hover {
+  transform: scale(1.10);
+}
+
+ul.goals {
+  padding: 0;
+  text-align: center;
+}
+
+.goals li {
+  list-style-type: none;
+  border-radius: 6px;
+  background: #ff9904;
+  color: white;
+  padding: 5px 10px;
+  margin: 10px;
+}
+
+.goals li:nth-child(odd) {
+  background: #0399ff;
+}
+
+.goals li:hover {
   transform: scale(1.10);
 }
 
@@ -246,6 +285,9 @@ a.social:hover {
 
   main {
     padding-top: 20px;
+      /* I obtained "background-image.jpg" from https://placeimg.com */
+    background: url('images/background-image.jpg') no-repeat top center;
+    background-size: cover;
   }
 
   main p {
